@@ -138,6 +138,7 @@ a:focus-visible, button:focus-visible{
 
 /* ヒーロー：藍の一枚板。左寄せ・上から業種→名前→資格の順に読む */
 .hero{background:var(--indigo); color:#eef2f8; padding:64px 0 56px;}
+.hero .wrap{max-width:960px;}
 .hero-eyebrow{font-size:15px; font-weight:700; letter-spacing:.03em; color:#cfe0ff; margin-bottom:18px;}
 .hero h1{color:#fff;}
 .hero h1 .handle{display:block; font-size:16px; font-weight:400; font-family:var(--font-body);
@@ -184,10 +185,10 @@ footer.site .brand{font-family:var(--font-display); font-weight:700; font-size:1
   .section{padding:44px 0;}
   .hero{padding:52px 0 44px;}
   body{padding-bottom:82px;}
-  .mobile-cta{display:flex; position:fixed; left:0; right:0; bottom:0; z-index:60;
+  .mobile-cta{display:flex; gap:10px; position:fixed; left:0; right:0; bottom:0; z-index:60;
     background:#fff; border-top:1px solid var(--hair); padding:10px 14px calc(10px + env(safe-area-inset-bottom));
     box-shadow:0 -6px 18px rgba(19,44,78,.12);}
-  .mobile-cta .btn{flex:1;}
+  .mobile-cta .btn{flex:1; padding:12px 8px; font-size:14px;}
 }
 @media(max-width:420px){
   .wrap{padding:0 18px;}
@@ -251,6 +252,15 @@ footer.site .brand{font-family:var(--font-display); font-weight:700; font-size:1
   </div>
 </div></section>
 
+<!-- 施術者について -->
+<section class="section" id="about"><div class="wrap wrap-narrow">
+  <span class="eyebrow">ABOUT</span>
+  <h2>施術者について</h2>
+  <p class="body-text">作業療法士として、その他リハビリの資格も複数取得しています。</p>
+  <p class="body-text">前職は回復期病院に勤務し、訪問リハビリにも携わってきました。</p>
+  <p class="body-text">その経験を活かし、藤沢で施術サロンを行っています。</p>
+</div></section>
+
 <!-- 出張について -->
 <section class="section" id="travel"><div class="wrap wrap-narrow">
   <span class="eyebrow">TRAVEL</span>
@@ -292,7 +302,8 @@ footer.site .brand{font-family:var(--font-display); font-weight:700; font-size:1
 
 <!-- モバイル下部固定CTA -->
 <div class="mobile-cta">
-  <a href="https://www.threads.net/@yhou_ot" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Threadsで予約について聞く</a>
+  <a href="https://www.threads.net/@yhou_ot" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Threadsで聞く</a>
+  <a href="https://www.instagram.com/yhou_ot/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Instagramで聞く</a>
 </div>
 
 <!-- 計測（件数のみ・個人情報は送信しない） -->
